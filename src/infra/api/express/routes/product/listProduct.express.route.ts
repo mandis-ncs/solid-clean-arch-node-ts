@@ -19,7 +19,7 @@ export class ListProductRoute implements Route {
 
     public static create(listProductService: ListProductUsecase) {
         return new ListProductRoute(
-            "products",
+            "/products",
             HttpMethod.GET,
             listProductService
         )

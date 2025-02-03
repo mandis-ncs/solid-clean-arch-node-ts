@@ -15,7 +15,7 @@ export class CreateProductRoute implements Route {
 
     public static create(createProductService: CreateProductUsecase) {
         return new CreateProductRoute(
-            "products",
+            "/products",
             HttpMethod.POST,
             createProductService
         )
