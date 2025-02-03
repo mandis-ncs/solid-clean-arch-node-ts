@@ -10,7 +10,7 @@ export type ListProductResponseDto = {
     }[]
 }
 
-export class LsitProductRoute implements Route {
+export class ListProductRoute implements Route {
     private constructor(
         private readonly path: string,
         private readonly method: HttpMethod,
@@ -18,7 +18,7 @@ export class LsitProductRoute implements Route {
     ) { }
 
     public static create(listProductService: ListProductUsecase) {
-        return new LsitProductRoute(
+        return new ListProductRoute(
             "products",
             HttpMethod.GET,
             listProductService
